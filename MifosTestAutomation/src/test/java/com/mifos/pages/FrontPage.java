@@ -243,6 +243,8 @@ public class FrontPage extends MifosWebPage {
 				clickButton(
 						getResource("frontend.admin.createoffice.savebutton"),
 						"id");
+				((JavascriptExecutor) getWebDriver())
+				.executeScript("scroll(500,0);");
 				Thread.sleep(7000);
 				file.close();
 			} catch (FileNotFoundException fnfe) {
